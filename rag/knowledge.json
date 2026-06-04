@@ -1,0 +1,111 @@
+{
+  "frontend": {
+    "industryExpectations": [
+      "Strong HTML, CSS, and JavaScript fundamentals",
+      "Responsive web design",
+      "Git and GitHub knowledge",
+      "Problem-solving skills"
+    ],
+
+    "technicalQuestions": [
+      "What is the difference between HTML and HTML5?",
+      "Explain the CSS Box Model.",
+      "What is Flexbox?",
+      "What is the DOM?",
+      "What are JavaScript promises?",
+      "Explain event bubbling.",
+      "What is asynchronous programming?"
+    ],
+
+    "behavioralQuestions": [
+      "Tell me about yourself.",
+      "What are your strengths?",
+      "Describe a challenge you faced.",
+      "How do you handle deadlines?",
+      "Why should we hire you?"
+    ],
+
+    "prepTopics": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "DOM Manipulation",
+      "APIs",
+      "GitHub"
+    ],
+
+    "companies": {}
+  },
+
+  "web developer": {
+    "industryExpectations": [
+      "Frontend and backend development skills",
+      "REST API knowledge",
+      "Database fundamentals",
+      "Version control experience"
+    ],
+
+    "technicalQuestions": [
+      "What is Node.js?",
+      "What is Express.js?",
+      "Explain REST APIs.",
+      "Difference between GET and POST?",
+      "What is middleware?",
+      "What is JSON?",
+      "How do you connect a database in Node.js?"
+    ],
+
+    "behavioralQuestions": [
+      "Tell me about yourself.",
+      "Describe a project you worked on.",
+      "How do you learn new technologies?",
+      "How do you handle team conflicts?"
+    ],
+
+    "prepTopics": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB/MySQL",
+      "Git"
+    ],
+
+    "companies": {}
+  },
+
+  "uiux": {
+    "industryExpectations": [
+      "User-centered design",
+      "Wireframing",
+      "Prototyping",
+      "Accessibility awareness"
+    ],
+
+    "technicalQuestions": [
+      "What is UI design?",
+      "What is UX design?",
+      "What is a wireframe?",
+      "What is a prototype?",
+      "What is design thinking?"
+    ],
+
+    "behavioralQuestions": [
+      "Describe your design process.",
+      "How do you handle feedback?",
+      "Tell me about a UI/UX project."
+    ],
+
+    "prepTopics": [
+      "Figma",
+      "Wireframing",
+      "Prototyping",
+      "Design Systems",
+      "Accessibility"
+    ],
+
+    "companies": {}
+  }
+}

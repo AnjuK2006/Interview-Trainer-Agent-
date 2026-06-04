@@ -5,21 +5,40 @@ const knowledgeDB = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../knowledge.json"), "utf8")
 );
 
-// simple relevance scoring
-function score(a, b) {
-  const A = a.toLowerCase().split(" ");
-  const B = b.toLowerCase().split(" ");
-  return B.filter(w => A.includes(w)).length;
-}
-
 function retrieve(role, resumeText = "") {
-  const data = knowledgeDB[role] || knowledgeDB["frontend"];
+
+  const normalizedRole = (role || "").toLowerCase().trim();
+
+  // Map UI roles to knowledge.json roles
+  let mappedRole = normalizedRole;
+
+  if (normalizedRole === "web developer") {
+    mappedRole = "frontend developer";
+  }
+
+  if (normalizedRole === "full stack developer") {
+    mappedRole = "frontend developer";
+  }
+
+  console.log("Role received:", normalizedRole);
+  console.log("Mapped role:", mappedRole);
+  console.log("Available roles:", Object.keys(knowledgeDB));
+
+  const data =
+    knowledgeDB[mappedRole] ||
+    knowledgeDB["frontend developer"] || {
+      industryExpectations: [],
+      technicalQuestions: [],
+      behavioralQuestions: [],
+      prepTopics: [],
+      companies: {}
+    };
 
   const words = resumeText.toLowerCase().split(/\s+/);
 
-  const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
+  const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
-  const filterByKeywords = (items) => {
+  const filterByKeywords = (items = []) => {
     return items.filter((q) =>
       words.some((w) => q.toLowerCase().includes(w))
     );
@@ -41,10 +60,10 @@ function retrieve(role, resumeText = "") {
       : data.prepTopics;
 
   return {
-    industryExpectations: data.industryExpectations,
-    technicalQuestions: shuffle(techPool).slice(0, 5),
-    behavioralQuestions: shuffle(behPool).slice(0, 3),
-    prepTopics: shuffle(prepPool).slice(0, 4),
+    industryExpectations: data.industryExpectations || [],
+    technicalQuestions: shuffle(techPool || []).slice(0, 5),
+    behavioralQuestions: shuffle(behPool || []).slice(0, 3),
+    prepTopics: shuffle(prepPool || []).slice(0, 4),
     companies: data.companies || {}
   };
 }
