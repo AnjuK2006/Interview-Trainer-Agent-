@@ -12,6 +12,9 @@ AI Interview Trainer Agent is an AI-powered interview preparation platform that 
 * 📈 Personalized improvement tips and preparation strategies
 * 🔍 Resume PDF parsing and keyword extraction
 
+
+![Home Page](HomeScreen.png)
+
 ## 🛠️ Tech Stack
 
 ### Frontend
