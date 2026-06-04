@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>AI Interview Trainer Agent</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Interview Trainer Agent</h1>
+
+<p class="subtitle">
+
+IBM Granite + RAG Interview Preparation
+
+</p>
+
+
+
+<!-- Resume Section -->
+
+<div class="card">
+
+<h2>Profile Details</h2>
+
+<form id="resumeForm">
+
+<input
+type="text"
+name="name"
+placeholder="Enter Name"
+required>
+
+<input
+type="text"
+name="role"
+placeholder="Job Role"
+required>
+
+<input
+type="text"
+name="experience"
+placeholder="Experience Level"
+required>
+
+<label>
+
+Upload Resume (Optional)
+
+</label>
+
+<input
+type="file"
+name="resume">
+
+<button type="submit">
+
+Generate Questions
+
+</button>
+
+</form>
+
+</div>
+
+
+
+<!-- Generated Questions -->
+
+<div class="card">
+
+<div class="titleRow">
+
+<h2>AI Generated Questions</h2>
+
+<button id="copyBtn">
+
+Copy
+
+</button>
+
+</div>
+
+<div id="loadingQuestions">
+
+</div>
+
+<pre id="result">
+
+No questions generated yet.
+
+</pre>
+
+</div>
+
+
+
+
+<!-- Evaluation Section -->
+
+<div class="card">
+
+<h2>Answer Evaluation</h2>
+
+<textarea
+id="question"
+rows="5"
+placeholder=
+"Paste Interview Question">
+</textarea>
+
+<textarea
+id="answer"
+rows="8"
+placeholder=
+"Type Your Answer">
+</textarea>
+
+<button id="evaluateBtn">
+
+Evaluate Answer
+
+</button>
+
+</div>
+
+
+
+
+<!-- Feedback -->
+
+<div class="card">
+
+<h2>AI Feedback</h2>
+
+<div id="loadingFeedback">
+
+</div>
+
+<pre id="evaluationResult">
+
+No evaluation yet.
+
+</pre>
+
+</div>
+
+<!-- INTERVIEW MODE -->
+<div class="card">
+
+<h2>Interview Simulation Mode</h2>
+
+<button id="startInterview">Start Interview</button>
+
+<pre id="interviewBox">Click start to begin interview</pre>
+
+<textarea id="chatAnswer" placeholder="Type your answer"></textarea>
+
+<button id="sendAnswer">Send Answer</button>
+
+</div>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

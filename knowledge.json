@@ -1,0 +1,60 @@
+{
+  "frontend developer": {
+
+    "industryExpectations": [
+      "Strong React fundamentals",
+      "Responsive UI design",
+      "REST API integration",
+      "Git and GitHub knowledge",
+      "JavaScript ES6+ understanding"
+    ],
+
+    "technicalQuestions": [
+      "Explain React Hooks.",
+      "Difference between Flexbox and Grid.",
+      "How does useEffect work?",
+      "Explain state management in React.",
+      "What is API integration?"
+    ],
+
+    "behavioralQuestions": [
+      "Describe a teamwork challenge.",
+      "How do you handle deadlines?",
+      "How do you learn new technologies?"
+    ],
+
+    "prepTopics":[
+      "React Hooks",
+      "Responsive Design",
+      "JavaScript ES6",
+      "REST APIs",
+      "Git"
+    ]
+  },
+
+  "backend developer": {
+
+    "industryExpectations":[
+      "Node.js fundamentals",
+      "Database optimization",
+      "REST API development",
+      "Authentication",
+      "Error handling"
+    ],
+
+    "technicalQuestions":[
+      "Explain JWT authentication.",
+      "Difference between SQL and NoSQL.",
+      "What is middleware?",
+      "How does async/await work?"
+    ],
+
+    "prepTopics":[
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Authentication",
+      "API Security"
+    ]
+  }
+}
