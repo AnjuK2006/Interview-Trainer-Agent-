@@ -1,0 +1,14 @@
+{
+  "name": "Interview Trainer Agent",
+  "description": "AI-powered Interview Trainer Agent using IBM Granite, Watsonx.ai and RAG",
+  "version": "1.0.0",
+  "author": "Anju K",
+  "technology": [
+    "IBM Granite",
+    "IBM Watsonx.ai",
+    "LangFlow",
+    "Node.js",
+    "Express.js",
+    "RAG"
+  ]
+}
